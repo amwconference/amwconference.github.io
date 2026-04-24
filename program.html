@@ -63,134 +63,26 @@
 
         <div class="page-content container">
             
-            <section class="info-section reveal program-group school-group">
-                <h2 class="section-title-left">School Program</h2>
-                <div class="editorial-text-block" style="margin-bottom: 2rem;">
-                    <p>Dedicated to foundational knowledge and specialized tutorials for students and young researchers.</p>
+            <div class="atb-placeholder reveal" style="text-align: center; padding: 6rem 2rem; background: rgba(0, 51, 102, 0.03); border-radius: 20px; border: 2px dashed rgba(0, 51, 102, 0.1); max-width: 950px; margin: 2rem auto; min-height: 450px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                
+                <i class="fa-solid fa-calendar-days" style="font-size: 4rem; color: var(--primary); opacity: 0.2; margin-bottom: 2rem; display: block;"></i>
+                
+                <h2 style="color: var(--primary-dark); font-size: 2.5rem; margin-bottom: 1.5rem; border: none;">Program to be Announced</h2>
+                
+                <div class="editorial-text-block" style="text-align: center;">
+                    <p style="font-size: 1.25rem; color: var(--text-main); max-width: 650px; margin: 0 auto 2rem auto; line-height: 1.8;">
+                        The official schedule for the <strong>17th Alberto Mendelzon International Workshop</strong> is currently under development. 
+                    </p>
+                    <p style="font-size: 1.1rem; opacity: 0.8; max-width: 600px; margin: 0 auto;">
+                        The full program, including the academic School sessions (Nov 9-10) and the technical Workshop tracks (Nov 11-13), will be published shortly after the paper selection process. 
+                    </p>
                 </div>
 
-                <nav class="program-tabs">
-                    <button class="tab-btn active" onclick="openDay(event, 'day1', 'school-group')">Mon, Nov 09</button>
-                    <button class="tab-btn" onclick="openDay(event, 'day2', 'school-group')">Tue, Nov 10</button>
-                </nav>
-
-                <div class="program-schedule">
-                    <div id="day1" class="tab-content active">
-                        <div class="schedule-item">
-                            <span class="time">Morning</span>
-                            <div class="activity">
-                                <h3>AMW School: Morning Session</h3>
-                                <p>Foundations of Databases and the Web (Part 1).</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">Afternoon</span>
-                            <div class="activity">
-                                <h3>AMW School: Afternoon Session</h3>
-                                <p>Foundations of Databases and the Web (Part 2).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="day2" class="tab-content">
-                        <div class="schedule-item">
-                            <span class="time">Morning</span>
-                            <div class="activity">
-                                <h3>AMW School: Morning Session</h3>
-                                <p>Foundations of Databases and the Web (Part 3).</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">Afternoon</span>
-                            <div class="activity">
-                                <h3>AMW School: Afternoon Session</h3>
-                                <p>Foundations of Databases and the Web (Part 4).</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item special">
-                            <span class="time">Evening</span>
-                            <div class="activity">
-                                <h3>Welcome Reception</h3>
-                                <p>Networking event to kick off the AMW 2026 Workshop.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div style="margin-top: 3rem; padding: 1rem 2rem; background: #fff; border-radius: 50px; display: inline-flex; align-items: center; gap: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <span style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%; display: inline-block;"></span>
+                    <span style="font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Stay tuned for updates</span>
                 </div>
-            </section>
-
-            <section class="info-section reveal program-group workshop-group">
-                <h2 class="section-title-left">Workshop Program</h2>
-                <div class="editorial-text-block" style="margin-bottom: 2rem;">
-                    <p>The core conference featuring paper presentations, keynote talks, and research discussions.</p>
-                </div>
-
-                <nav class="program-tabs">
-                    <button class="tab-btn active" onclick="openDay(event, 'day3', 'workshop-group')">Wed, Nov 11</button>
-                    <button class="tab-btn" onclick="openDay(event, 'day4', 'workshop-group')">Thu, Nov 12</button>
-                    <button class="tab-btn" onclick="openDay(event, 'day5', 'workshop-group')">Fri, Nov 13</button>
-                </nav>
-
-                <div class="program-schedule">
-                    <div id="day3" class="tab-content active">
-                        <div class="schedule-item">
-                            <span class="time">Morning</span>
-                            <div class="activity">
-                                <h3>AMW Workshop: Technical Sessions</h3>
-                                <p>Paper presentations and keynote talks.</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">Afternoon</span>
-                            <div class="activity">
-                                <h3>AMW Workshop: Technical Sessions</h3>
-                                <p>Paper presentations and discussions.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="day4" class="tab-content">
-                        <div class="schedule-item">
-                            <span class="time">Morning</span>
-                            <div class="activity">
-                                <h3>AMW Workshop: Technical Sessions</h3>
-                                <p>Paper presentations and keynote talks.</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">Afternoon</span>
-                            <div class="activity">
-                                <h3>AMW Workshop: Technical Sessions</h3>
-                                <p>Paper presentations and discussions.</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item special">
-                            <span class="time">Evening</span>
-                            <div class="activity">
-                                <h3>Gala Dinner</h3>
-                                <p>Casa Andina Select / Convento de Santa Catalina (To be confirmed).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="day5" class="tab-content">
-                        <div class="schedule-item">
-                            <span class="time">Morning</span>
-                            <div class="activity">
-                                <h3>AMW Workshop: Closing Sessions</h3>
-                                <p>Final paper presentations and closing remarks.</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item special">
-                            <span class="time">Afternoon</span>
-                            <div class="activity">
-                                <h3>City Tour & Cultural Activities</h3>
-                                <p>Participants can choose between the <strong>Ruta del Sillar</strong> (4 hours) or the traditional <strong>Campiña Tour</strong> (4 hours).</p>
-                                <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">* Special weekend packages to visit the Colca Canyon will also be available.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
 
         </div>
     </main>
