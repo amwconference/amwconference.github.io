@@ -62,39 +62,7 @@ header {
 /* ==========================================================================
    LOGO: AZUL PRIMARIO SÓLIDO, SIN SUBRAYADO Y SIN TRANSPARENCIA
    ========================================================================== */
-.logo, 
-a.logo,
-body.inner-page header .logo {
-    color: #ffffff !important;
-    text-decoration: none !important; /* Confirmamos sin subrayado */
-    opacity: 1 !important; /* Confirmamos sólido */
-    transition: none !important; /* Sin animaciones que lo aclaren al cargar */
-    
-    /* Reseteamos cualquier efecto de degradado o fondo que pusimos en el hero */
-    background: none !important;
-    -webkit-text-fill-color: #ffffff; 
-    
-    /* Estilos de fuente (se mantienen de tu código previo) */
-    font-weight: 800 !important;
-    font-size: 1.5rem !important;
-    text-transform: uppercase !important;
-    display: inline-block !important;
-    border: none !important;
-}
-
-/* Al hacer scroll, el logo cambia a AZUL OSCURO */
-header.scrolled .logo {
-    color: #001F3F !important;
-    -webkit-text-fill-color: #001F3F !important;
-}
-
-/* Bloqueo total en Hover para que no cambie a blanco ni se aclare */
-.logo:hover,
-a.logo:hover {
-    color: #001F3F !important;
-    text-decoration: none !important;
-    opacity: 1 !important;
-}
+https://srv719-files.hstgr.io/293c568e95df7c33/files/public_html/info.html
 
 .nav-links {
     display: flex;
