@@ -59,10 +59,44 @@ header {
 }
 
 
+
 /* ==========================================================================
-   LOGO: AZUL PRIMARIO SÓLIDO, SIN SUBRAYADO Y SIN TRANSPARENCIA
+   LOGO: AZUL EN INDEX / BLANCO EN INTERNAS (TOP)
    ========================================================================== */
-https://srv719-files.hstgr.io/293c568e95df7c33/files/public_html/info.html
+
+/* 1. Estado base y para el INDEX (Azul) */
+.logo, 
+a.logo {
+    color: #001F3F !important;
+    -webkit-text-fill-color: #001F3F !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+    border: none !important;
+    background: none !important;
+    transition: color 0.3s ease !important;
+}
+
+/* 2. Solo para PÁGINAS INTERNAS cuando están arriba (Blanco) */
+/* Esto detecta la clase .inner-page del body y que el header NO tenga .scrolled */
+body.inner-page header:not(.scrolled) .logo {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* 3. AL HACER SCROLL (Azul en todas las páginas) */
+header.scrolled .logo {
+    color: #001F3F !important;
+    -webkit-text-fill-color: #001F3F !important;
+}
+
+/* Bloqueo en Hover */
+.logo:hover, a.logo:hover {
+    opacity: 0.8 !important;
+}
 
 .nav-links {
     display: flex;
