@@ -2746,83 +2746,120 @@ body header#main-nav ul#nav-links .dropdown-menu li a:active {
 
 
 /* ==========================================================================
-   PÁGINA: REGISTRATION (EDITORIAL FEES)
+   PÁGINA: REGISTRATION (MODERN PRICING CARDS)
    ========================================================================== */
-
-.fees-list {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.fee-row {
+.pricing-grid {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    align-items: center;
-    padding: 2rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.fee-row:last-child {
-    border-bottom: none;
-}
-
-.fee-info h3 {
-    font-size: 1.5rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
-}
-
-.fee-info p {
-    color: var(--text-main);
-    opacity: 0.7;
-    font-style: italic;
-}
-
-.fee-price {
+.price-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+    text-align: center;
+    transition: var(--transition);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    text-align: right;
 }
 
-.price-item {
-    font-size: 1.2rem;
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 51, 102, 0.1);
+    border-color: var(--accent);
+}
+
+.price-card h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-card .price-main {
+    margin: 1.5rem 0;
+}
+
+.price-card .amount {
+    font-size: 3rem;
+    font-weight: 900;
     color: var(--primary-dark);
 }
 
-.price-item strong {
-    color: var(--accent);
+.price-card .currency {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.price-card .price-label {
+    display: block;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
-    margin-right: 10px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.price-card .features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.price-card .features li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: var(--text-main);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.price-card .features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.price-card .features li:last-child {
+    border-bottom: none;
+}
+
+.price-card .late-price {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px dashed rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.price-card .late-price strong {
+    color: var(--primary);
 }
 
 /* Botón de Registro Principal */
 .registration-cta {
-    margin: 3rem 0;
-    padding: 2.5rem;
-    border-top: 2px solid var(--accent);
-    display: flex;
-    justify-content: center;
+    margin: 4rem 0;
+    padding: 3rem;
+    background: rgba(0, 51, 102, 0.03);
+    border-radius: 20px;
+    text-align: center;
 }
 
 .registration-cta .btn-read-more {
-    font-size: 1.5rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .fee-row {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        text-align: center;
-    }
-    .fee-price {
-        text-align: center;
-    }
+    font-size: 1.4rem;
+    padding: 1.2rem 3rem;
 }
 
 
