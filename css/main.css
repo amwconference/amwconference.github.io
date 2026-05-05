@@ -1594,7 +1594,7 @@ body header#main-nav ul#nav-links .dropdown-menu li a:active {
 .page-header-content {
     position: relative;
     z-index: 2; /* Para que quede por encima de la cuadrícula */
-
+    max-width: 100%;
     padding: 0 20px;
     animation: slideUpFade 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
